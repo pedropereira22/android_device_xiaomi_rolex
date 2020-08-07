@@ -150,6 +150,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.mode=concurrent \
     persist.sys.fflag.override.settings_network_and_internet_v2=true
 
+PRODUCT_PROPERTY_OVERRIDES += \
+     persist.vendor.data.iwlan.enable=true \
+     ro.telephony.iwlan_operation_mode=legacy
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.delta_time.enable=true \
