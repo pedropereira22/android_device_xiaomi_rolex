@@ -17,5 +17,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/fluid_rolex.mk
 
 COMMON_LUNCH_CHOICES := \
-    du_rolex-user \
-    du_rolex-userdebug
+    fluid_rolex-user \
+    fluid_rolex-userdebug
