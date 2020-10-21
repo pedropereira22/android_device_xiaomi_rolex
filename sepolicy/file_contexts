@@ -26,7 +26,7 @@
 # Ir
 /dev/lirc[0-9]*					u:object_r:lirc_device:s0
 
-# Rild
+# Rildfile_contexts
 /(vendor|system/vendor)/radio/qcril_database/qcril.db	u:object_r:rild_file:s0
 
 # RTC
@@ -34,6 +34,9 @@
 
 # Root filesystem
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
+/file_contexts.bin                              u:object_r:file_contexts_file:s0
+/file_contexts(/.*)?                            u:object_r:file_contexts_file:s0
+
 
 # Touch
 /sys/devices/soc/78b7000.i2c/i2c-3/3-[0-9a-f]+/disable_keys   u:object_r:touch_sysfs:s0
