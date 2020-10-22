@@ -34,6 +34,7 @@
 
 # Root filesystem
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
+/persist(/.*)?                                  u:object_r:persist_file:s0
 /file_contexts.bin                              u:object_r:file_contexts_file:s0
 /file_contexts(/.*)?                            u:object_r:file_contexts_file:s0
 
